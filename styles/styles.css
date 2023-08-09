@@ -32,19 +32,23 @@
 }
 
 .presentacion{
+    box-sizing: content-box;
     background-color: aquamarine;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 90px auto;
+    height: 30%;
+    padding: 60px;
+    
 }
 
 .presentacion p{
-    font-size: 25px;
-    line-height: 29px;
+    font-size: 50px;
+    line-height: 90px;
 }
 
 .presentacion .letra_pequeña {
     text-align: center;
-    font-size: 15px;
+    font-size: 30px;
+    padding: 40px;
 }
 
 .home_hipervinculos{
