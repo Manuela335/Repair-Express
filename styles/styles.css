@@ -254,8 +254,21 @@ a{
 
 
 .precios .costos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.costos .costos-img{
+    border: 1px solid black;
+    height: 200px;
+}
+
+.costos-img img{
+    height: 100%;
 }
 
 /* SECCION 5 */
