@@ -46,7 +46,7 @@ body{
     height: 100vh;
     position: fixed;
     top: 0; left: 0;
-    background-color: rgba(215, 217, 219, 0.8);
+    background-color: rgba(47, 47, 47, 0.8);
     backdrop-filter: blur(10px);
     display: none;
     justify-content: center;
