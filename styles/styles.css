@@ -30,6 +30,11 @@ body{
 
 .boton-modal label:hover{
     background-color: #185E83;
+    color: #fff;
+}
+
+.boton-modal label i:hover{
+    color: #fff;
 }
 
 #btn-modal{
@@ -41,7 +46,8 @@ body{
     height: 100vh;
     position: fixed;
     top: 0; left: 0;
-    background-color: rgba(144, 148, 150, 0.8);
+    background-color: rgba(215, 217, 219, 0.8);
+    backdrop-filter: blur(10px);
     display: none;
     justify-content: center;
     align-items: center;
@@ -56,38 +62,38 @@ body{
     width: 500px;
     max-width: 60%; /* Cambiado para que el pop-up no ocupe toda la pantalla */
     max-height: 100%; /* Agregado para limitar la altura */
-    padding: 20px;
+    padding: 10px 30px;
     background-color: #fff;
     border-radius: 30px;
     box-sizing: border-box;
     overflow: auto;
 }
 
-.content-modal h2{
+.content-modal h4{
     margin-bottom: 5px;
     text-align: center;
     font-size: 18px;
+    font-weight: lighter;
 }
 
 
 .content-modal .btn-cerrar{
     width: 100%;
-    margin-top: 15px;
     display: flex;
     justify-content: flex-end;
 }
 
 .content-modal .btn-cerrar label{
-    padding: 10px 15px;
+    padding: 8px 10px;
     background-color: #ffffff;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 300ms ease;
 }
 
 .content-modal .btn-cerrar label:hover{
-    background-color: #185E83;
+    background-color: #f1f2f5;
 }
 
 .formulario {
@@ -104,7 +110,7 @@ body{
 .form-group {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .buttons{
@@ -128,7 +134,7 @@ select{
 
 button {
     width: 40%;
-    height: 40px;
+    height: 45px;
     padding: 0px 15px;
     margin: 0px 15px;
     cursor: pointer;
@@ -169,17 +175,18 @@ footer .icons{
 }
 
 footer .icons div{
-    border: 1px solid black;
-    margin: 10px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-modal .logo-repair{
     height: 80px;
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,4 +196,41 @@ footer .icons div{
 .logo-repair img{
     width: 180px;
     overflow: hidden;
+}
+
+hr{
+    margin: 25px 20px;
+}
+
+h6{
+    font-size: 15px;
+    color: #999797;
+    font-weight: lighter;
+}
+
+footer .icons div img{
+    width: 20px;
+}
+
+/* Agrega una clase para la animación de entrada */
+.container-modal.fade-in {
+    animation: fadeInModal 10s ease;
+}
+
+/* Define una clase para la animación */
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la clase de animación cuando el checkbox está marcado */
+#btn-modal:checked ~ .container-modal {
+    display: flex;
+    animation: fadeInModal 0.5s ease;
 }
