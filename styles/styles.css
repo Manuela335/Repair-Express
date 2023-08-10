@@ -8,9 +8,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "kollet";
+    list-style: none;
 }
 
 .home {
+    height: 80vh;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
 }
@@ -224,6 +226,7 @@ a{
 .texto h2{
     padding-top: 20px;
     font-weight: lighter;
+    font-size: 30px;
 }
 
 .texto p{
@@ -237,6 +240,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
     margin: 40px;
@@ -255,7 +259,7 @@ a{
 
 .precios .costos{
     margin: 40px;
-    width: 75vw;
+    width: 65vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -271,8 +275,66 @@ a{
     height: 100%;
 }
 
+.costos h3{
+    margin-top: 2px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.desde{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.texto{
+    margin-bottom: 40px;
+}
+
+.precios .letra_pequeña{
+    font-size: 15px;
+}
 /* SECCION 5 */
 
+.dispositivos{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.mac_devices{
+    border: 1px solid black;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mac_devices .device{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    height: 55vh;
+    width: 300px;
+}
+
+.device img{
+    width: 100%;
+}
+
+ .iphone .device img{
+    height: 100%;
+}
+
+
+.mac_devices h3{
+    margin: 60px;
+    font-size: 37px;
+}
 
 
 /* SECCION 6 */
@@ -284,9 +346,79 @@ a{
     background-repeat: no-repeat;
 }
 
+.flag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.flag h2{
+    font-size: 57px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flag span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flag .letra_pequeña{
+    border: 1px solid black;
+    align-items: self-end;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-top: 200px;
+    line-height: 35px;
+}
+
+.flag .imagenes{
+    border: 1px solid black;
+    height: 30%;
+    width: 50vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes img{
+    margin: 0px 10px;
+    padding: 0px 85px;
+    width: 100%;
+}
+
+.yellow{
+    color: #FCD116;
+}
+
+.red{
+    color: #CE1126;
+}
+
+.blue{
+    color: #003893;
+}
+
+
 /* FOOTER */
 
 footer{
-    height: 100px;
+    
+    height: 200px;
     background-color: #0050f5;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 80px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
 }
